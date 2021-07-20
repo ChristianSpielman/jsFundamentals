@@ -1,0 +1,37 @@
+#mainTitle{
+    text-align: center;
+    color: lightgreen;
+}
+.headings{
+    color: blue;
+}
+.descriptions{
+    color: red;
+}
+div{
+    border: black;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.first, .second, .third{
+    border-radius: 25px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.prompts {
+    display: flex;
+}
+
+.movies {
+    background-color: lightskyblue;
+    border-style: ridge;
+    border-color: black;
+}
+
+.movie-wrapper{
+    display: flex;
+    justify-content: center;
+}
