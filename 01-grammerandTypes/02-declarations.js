@@ -79,3 +79,4 @@ console.log(startingWithLetter, _startingWithUnderScore, $startingWithDollarSign
         and sets the value of the variable
             -let x = 10
             10 would be the initialization
+            */
