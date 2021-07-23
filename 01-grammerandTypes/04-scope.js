@@ -59,5 +59,3 @@ var and let seem to operate the same way, but while they do have a lot of the sa
     -var is scoped to the nearest function block
     -let is scoped to the nearest enclosing block
 */
-
-
