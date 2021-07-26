@@ -186,3 +186,45 @@ greeting();
 greeting(firstName, lastName);
 greeting(firstName, null);
 greeting('',lastName);
+
+
+
+
+
+
+function checkNumber(){ 
+    for(x = 0; x <= 10; x++){
+        if (x % 2 == 0){
+            console.log(`${x} is an even number.`);
+        } else if (x % 2 == 1){
+            console.log(`${x} is an odd number`);
+        }else {
+            console.log('This is not a number!');
+        }
+    }
+}
+checkNumber()
+
+
+
+
+for(x = 1; x <=100; x++){
+    console.log(x);
+    if(x % 3 == 0)
+        console.log("Fizz");
+    if(x % 5 == 0)
+        console.log("Buzz");
+}
+
+
+for(let l = 1; l <= 100; l++){
+    if (l % 15 == 0) {
+        console.log('Fizz Buzz');
+        } else if(l % 3 == 0) {
+            console.log('Fizz');
+        } else if(l % 5 == 0);{
+            console.log('Buzz');
+        } else {
+            console.log(l);
+        }
+    }

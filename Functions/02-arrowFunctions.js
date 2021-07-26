@@ -129,3 +129,9 @@ let shoot = (x,y) => {
 }
 
 shoot(hero, nock)
+
+
+
+for ( let j= 0; j <5; j++){
+    console.log(j + "")
+}
