@@ -228,3 +228,57 @@ for(let l = 1; l <= 100; l++){
             console.log(l);
         }
     }
+
+//whiteboard challenge
+
+let func =(x,y) => console.log(x,y);
+func(x,y)
+
+
+function writtenOutOne (x,y){
+    console.log(x,y);
+}
+writtenOutOne('person1', 'person2')
+
+
+for(let x = 0; x <= 100; x++){
+	if(x % 24 == 0){
+		console.log(x,'Fizz Buzz')
+} else if(x % 6 == 0){
+	console.log(x,'Fizz')
+} else if(x % 8 == 0){
+	console.log(x,'Buzz')
+} else{
+	console.log(x)}
+}
+
+let library = {
+    name:'Christian Spielman',
+    address:'1234 Sesame St',
+    sections:[
+        collections [
+            {
+            classification: 'one',
+            count: 2,
+            aisle: 'value',
+            },
+            {
+            classification: 'two',
+            count: 3,
+            aisle: 'value2',  
+            }
+        ]
+    ]
+}
+console.log(library);
+console.log(library.sections.collections);
+
+
+function findPerimeter(length, width){
+    let x= length *2 + width *2;
+    if (x > 20){
+        console.log(`True. The perimeter is ${x}`);
+    } else { console.log(`False. The perimeter is ${x}`)
+    }
+}
+findPerimeter(5,5);
