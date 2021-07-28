@@ -53,26 +53,41 @@ console.log(document.getElementById('spanTest').innerHTML);
 /*
 addEventListener()
 */
-document.getElementById('clickThis').addEventListener('click', function(event){
-    //now i can write code
-    // console.log(event);
-    console.log(event.target);
-    event.target.style.backgroundColor ='#013bf3'
-})
-
-//addEventListener-keyup
-
-let input = document.getElementById('nameInput');
-
-input.addEventListener('keyup', e => {
-    //console.log(e.target)
-    console.log(e.target.value);
-    // console.log(document.getElementByTagName('p'));
-    document.getElementByTagName('p')[0].innerText = 'Something has Changes!'
-
-    if(e.target.value ==''){
-        document.getElementsByTagName('p')[1].innerText = 'Nothing has been typed...'
+// document.getElementById('clickThis').addEventListener('click', function(event) {
+//     // now i can write code
+//     // console.log(event);
+//     console.log(event.target);
+//     event.target.style.backgroundColor = '#031bf3'
+//   })
+  
+  
+  // ! addEventListener - keyup
+  
+  let input = document.getElementById('nameInput');
+  
+  input.addEventListener('keyup', e => {
+    // console.log(e.target)
+    console.log(e.target.value)
+    // console.log(document.getElementsByTagName('p'))
+    document.getElementsByTagName('p')[0].innerText = 'Something has Changed!'
+  
+    if(e.target.value === ''){
+      document.getElementsByTagName('p')[1].innerText = 'Nothing has been typed...';
     } else {
-        document.getElementsByTagName('p')[1].innerText = `Everyone say hello to $[e.target.value]`;
+      document.getElementsByTagName('p')[1].innerText = `Everyone, say hello to ${e.target.value}`;
     }
+  }) 
+
+
+//challenge: move button into a variable and when you click the button it will turn blue, or if it is already blue it will turn red
+
+let button = document.getElementById('clickThis')
+
+button.addEventListener('click', ev => {
+  console.log(ev.target.style.backgroundColor);
+  if(ev.target.style.backgroundColor == 'blue'){
+    ev.target.style.backgroundColor = 'red';
+  } else {
+    ev.target.style.backgroundColor = 'blue';
+  }
 })

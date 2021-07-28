@@ -192,7 +192,7 @@ greeting('',lastName);
 
 
 
-function checkNumber(){ 
+function checkNumber(x){ 
     for(x = 0; x <= 10; x++){
         if (x % 2 == 0){
             console.log(`${x} is an even number.`);
@@ -203,7 +203,7 @@ function checkNumber(){
         }
     }
 }
-checkNumber()
+checkNumber('bob')
 
 
 
@@ -282,3 +282,26 @@ function findPerimeter(length, width){
     }
 }
 findPerimeter(5,5);
+
+//ripl
+
+for(let x = 0; x <= 100; x++){
+	if(x % 2 == 0){
+		console.log(x, 'the number is even')
+} else if(x % 2 == 1){
+	console.log(x,'the number is odd')
+}  else{
+	console.log('What is this?')}
+}
+
+
+function checkEven(x){
+    if(x % 2 == 0){
+        console.log('the number is even');
+    } else if(x % 2 == 1){
+        console.log('the number is odd');
+    }  else{
+        console.log('What is this?')}
+    }
+checkEven('bob')
+

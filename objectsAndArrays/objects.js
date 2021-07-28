@@ -151,3 +151,60 @@ let testObj = {
 }
 console.log(testObj.noSpaces);
 console.log(testObj['Spaces Here']);
+
+
+
+
+let netflix = {
+    //name:value
+    id: 1,
+    name: 'The Office',
+    genre: 'Comedy',
+    season1: {
+        seasonInfo: {
+            episodeInfo:[
+                {
+                    episode: 1,
+                    episodeName: 'Pilot'
+                },
+                {
+                    episode: 2,
+                    episodeName: 'Diversity Day'
+                },
+                {
+                    episode: 3,
+                    episodeName: 'Health Care'
+                },
+                {
+                    episode: 4,
+                    episodeName: 'The Alliance'
+                },
+                {
+                    episode: 5,
+                    episodeName: 'Basketball'
+                },
+                {
+                    episode: 6,
+                    episodeName: 'Hot Girl' 
+                }
+            ]
+        }
+    }
+}
+
+
+let movie = {
+    Name: 'Jungle Cruise',
+    runTime: 120,
+    genre: 'Action',
+    characterProperties: {
+        name: 'Frank Wolff',
+        age: 40,
+        items:{
+            item: 'Boat',
+            item: 'Hat',
+            item: 'Machete',
+        }
+
+    }
+}
