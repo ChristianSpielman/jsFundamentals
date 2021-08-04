@@ -281,11 +281,11 @@ function findPerimeter(length, width){
     } else { console.log(`False. The perimeter is ${x}`)
     }
 }
-findPerimeter(5,5);
+findPerimeter(5,20);
 
 //ripl
 
-for(let x = 0; x <= 100; x++){
+for(let x = 0; x <= 10; x++){
 	if(x % 2 == 0){
 		console.log(x, 'the number is even')
 } else if(x % 2 == 1){
@@ -295,13 +295,27 @@ for(let x = 0; x <= 100; x++){
 }
 
 
-function checkEven(x){
+function callback(x){
     if(x % 2 == 0){
-        console.log('the number is even');
+        console.log(x + ' the number is even');
     } else if(x % 2 == 1){
-        console.log('the number is odd');
+        console.log(x + ' the number is odd');
     }  else{
         console.log('What is this?')}
     }
-checkEven('bob')
+callback(1)
 
+
+
+//
+function callback(){
+    for( x = 0; x <=10; x++){
+        if(x % 2 == 0){
+            console.log(x, 'the number is even')
+    } else if(x % 2 == 1){
+        console.log(x,'the number is odd')
+    }  else{
+        console.log('What is this?')}
+    }
+}
+callback(2)

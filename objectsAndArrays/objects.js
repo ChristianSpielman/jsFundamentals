@@ -194,17 +194,33 @@ let netflix = {
 
 
 let movie = {
-    Name: 'Jungle Cruise',
+    name: "Jungle Cruise",
     runTime: 120,
-    genre: 'Action',
-    characterProperties: {
-        name: 'Frank Wolff',
-        age: 40,
-        items:{
-            item: 'Boat',
-            item: 'Hat',
-            item: 'Machete',
+    genre: "Action",
+    characters:{
+        character1: {
+            name: "Frank Wolff",
+            age: 40,
+            items: ["water bottle","compass", "machete"]
+        },
+        charachter2: {
+            name: "Lily Houghton",
+            age: 38,
+            items: ["rope","map","gun"]
         }
-
     }
+}
+
+let movie = {
+    name: "jungle Cruise",
+    runTime: 120,
+    genre: "Action",
+    characters: [{
+        character1: {
+            name: "Fr4ank wolff",
+            age: 40,
+            items: ["water", "bottle", "compass", "machete"]
+        },
+        
+    }]
 }

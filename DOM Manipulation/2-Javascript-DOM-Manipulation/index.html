@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--All of our HTML code will go here-->
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput"   placeholder="John Smith"/>
+
+    <p>Welcome!</p>
+    <p>No name has been entered</p>
+
+
+    <p id="testParagraph">sample text</p>
+    <button id="clickThisButton">I want to be clicked</button>
+    <p class="sampleClass">This paragraph has a class of 'sampleClass</p>
+    <h1>Hello World!</h1>
+
+
+
+
+    <script type= "text/javascript">
+    /* All of our Javascript code will go here */
+    document.getElementById('nameInput').addEventListener('keyup', (event) => {
+        if (event.target.value ===''){
+            document.getElementsByTagName("p")[1] = `No name has been entered`;
+        } else {
+        document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+        }
+    });
+</script>
+
+<!-- 
+    document.getElementById('nameInput').addEventListener('keyup', (event) => {
+        console.log(event.target.value);
+        console.log(document.getElementsByTagName("p"));
+    });
+
+    document.getElementById('nameInput').addEventListener('keyup', (event) => {
+        console.log(event);
+    })
+
+    document.getElementById('clickThisButton').addEventListener('click', (details) =>{
+        details.target.style.backgroundColor = 'red';
+    });
+
+    console.log(document.querySelectorAll("p.sampleClass"));
+
+    document.querySelectorAll("p.sampleClass")[0].innerHTML = "<span>I am a whole new element!</span>";
+
+    document.getElementById('testParagraph').style.color ='blue';
+    console.log(document.getElementById('testParagraph').style.color);
+    var x = 10;
+    console.log(x); -->
+</body>
+</html>
